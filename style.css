@@ -33,6 +33,7 @@ body {
 }
 
 .btn {
+  display: flex;
   background-color: white;
   cursor: pointer;
   font-size: 24px;
@@ -42,10 +43,18 @@ body {
   height: 100%;
   width: 50px;
   transition: transform 0.3s ease;
+  justify-content: center;
+  align-items: center;
+  border: 0;
 }
 
 .bth:focus,
 input:focus {
+  outline: none;
+}
+
+.bth:active,
+input:active {
   outline: none;
 }
 
